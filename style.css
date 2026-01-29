@@ -18,10 +18,15 @@ body{
     box-sizing: border-box;
     padding-bottom: 50px;
     padding-top: 10px;
+    width: 100%;
+    margin-bottom: 0px;
+}
+.nav-second-half{
+  width: 60%;
 }
 .nav-ul{
     display: flex;
-    width: 46vw;
+    width: 100%;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -50,25 +55,29 @@ a:hover{
 /* ----------------------------- Hero-Section ------------------------------------ */
 #hero-section{
   width: 100%;
+ 
 }
 .hero{
-    height: 450px;
+    margin-top: 0px;
+    min-height: 60vh;
     width: 100%;
-    background-color:rgb(237, 231, 221);
-    border: 1px solid rgb(237, 231, 221);
+    border: 1px solid transparent;
+    background-color:rgb(237, 231, 221);;
     background-image: url('./images/HerosImage.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position:top;
     line-height: 60px;
+    position: relative;
 }
 .bt-1{
     height: 60px;
     width: 60px;
     border-radius: 50px;
     font-size: 16px;
-    position: relative;
-    transform: translate(930px,0px);
+    position: absolute;
+    top:60%;
+    left:60vw;
     color: white;
     background-color:blueviolet; 
     border: 1px solid blueviolet;
@@ -81,7 +90,8 @@ a:hover{
     border-radius: 50px;
     font-size: 16px;
     position: absolute;
-    transform: translate(1100px,0px);
+    top:10%;
+    left:74vw;
     color: white;
     background-color:blueviolet; 
     border: 1px solid blueviolet;
@@ -94,7 +104,8 @@ a:hover{
     border-radius: 50px;
     font-size: 16px;
     position: absolute;
-    transform: translate(930px,40px);
+    top:40%;
+    left:90vw;
     color: white;
     background-color:blueviolet; 
     border: 1px solid blueviolet;
@@ -103,13 +114,13 @@ a:hover{
 
 @keyframes textMove1 {
     from{
-        transform: translate(850px,200px);
+      top:60%;
+      left:60vw;
     }
     to{
-        transform: translate(850px,220px);
-    }
-  
-    
+      top:56%;
+      left:60vw;
+    } 
 }
 
 .bt-1{
@@ -119,10 +130,12 @@ a:hover{
 
 @keyframes textMove2 {
     from{
-        transform: translate(1020px,0px);
+        top:10%;
+        left:74vw;
     }
     to{
-        transform: translate(1020px,20px);
+        top:6%;
+        left:74vw;
     }
   
     
@@ -132,15 +145,15 @@ a:hover{
     animation: textMove2 1s  ease-in-out 1s infinite alternate;
 }
 
-@keyframes textMove3 {
+ @keyframes textMove3 {
     from{
-        transform: translate(1200px,130px);
+         top:40%;
+         left:90vw;
     }
     to{
-        transform: translate(1200px,150px);
+         top:36%;
+         left:90vw;
     }
-  
-    
 }
 
 .bt-3{
@@ -148,7 +161,7 @@ a:hover{
 }
 
 .hero-text{
-   margin-left: 80px;
+   margin-left: 50px;
     font-size: 40px;
 }
 
@@ -291,17 +304,18 @@ a:hover{
 .Fimg{
     margin-top: 80px;
     box-shadow: 0px 5px 15px black;
-    transform: translate(41vw, 0) rotate(3deg);
+    text-align: center;
+    transform: translate(38vw, 0) rotate(3deg);
 }
 @keyframes frame {
     0%{
-        transform: translate(41vw, 0) rotate(0deg);
+        transform: translate(38vw, 0) rotate(0deg);
     }
     50%{
-        transform: translate(41vw, 0) rotate(4deg);
+        transform: translate(38vw, 0) rotate(4deg);
     }
     100%{
-        transform: translate(41vw, 0) rotate(0deg);
+        transform: translate(38vw, 0) rotate(0deg);
     }
 }
 .Fimg{
@@ -509,7 +523,7 @@ a:hover{
         transform: translateX(-100);
       }
       100%{
-        transform: translateX(1380px);
+        transform: translateX(1440px);
       }
       
     }
