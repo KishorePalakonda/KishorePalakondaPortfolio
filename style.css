@@ -48,6 +48,9 @@ a:hover{
 }
 
 /* ----------------------------- Hero-Section ------------------------------------ */
+#hero-section{
+  width: 100%;
+}
 .hero{
     height: 450px;
     width: 100%;
@@ -506,7 +509,7 @@ a:hover{
         transform: translateX(-100);
       }
       100%{
-        transform: translateX(1400px);
+        transform: translateX(1380px);
       }
       
     }
