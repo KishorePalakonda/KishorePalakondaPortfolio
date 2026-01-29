@@ -1,0 +1,527 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body{
+    background-color:white;
+    font-family: sans-serif;
+}
+/* ------------------------------Nav-Bar------------------------------------ */
+.nav-bar{
+    background-color:rgb(237, 231, 221);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+    padding-bottom: 50px;
+    padding-top: 10px;
+}
+.nav-ul{
+    display: flex;
+    width: 46vw;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    font-size: 18px;
+    color: rgb(124, 121, 121);
+    box-sizing: border-box;
+}
+.nav-button{
+    background-color: blueviolet;
+    font-size: 20px;
+    color: white;
+    width: 150px;
+    border-radius: 6px;
+    border: 1px solid blueviolet;
+    letter-spacing: 1px;
+}
+a{
+    text-decoration: none;
+    color:rgb(106, 103, 103);
+}
+a:hover{
+    color: blueviolet;
+}
+
+/* ----------------------------- Hero-Section ------------------------------------ */
+.hero{
+    height: 450px;
+    width: 100%;
+    background-color:rgb(237, 231, 221);
+    border: 1px solid rgb(237, 231, 221);
+    background-image: url('./images/herosImage.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:top;
+    line-height: 60px;
+}
+.bt-1{
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    font-size: 16px;
+    position: relative;
+    transform: translate(930px,0px);
+    color: white;
+    background-color:blueviolet; 
+    border: 1px solid blueviolet;
+    color: white;
+    z-index: 1;
+}
+.bt-2{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    font-size: 16px;
+    position: absolute;
+    transform: translate(1100px,0px);
+    color: white;
+    background-color:blueviolet; 
+    border: 1px solid blueviolet;
+    color: white;
+}
+
+.bt-3{
+    height: 80px;
+    width: 80px;
+    border-radius: 50px;
+    font-size: 16px;
+    position: absolute;
+    transform: translate(930px,40px);
+    color: white;
+    background-color:blueviolet; 
+    border: 1px solid blueviolet;
+    color: white;
+}
+
+@keyframes textMove1 {
+    from{
+        transform: translate(850px,200px);
+    }
+    to{
+        transform: translate(850px,220px);
+    }
+  
+    
+}
+
+.bt-1{
+    animation: textMove1 1s  ease-in-out  infinite alternate;
+}
+
+
+@keyframes textMove2 {
+    from{
+        transform: translate(1020px,0px);
+    }
+    to{
+        transform: translate(1020px,20px);
+    }
+  
+    
+}
+
+.bt-2{
+    animation: textMove2 1s  ease-in-out 1s infinite alternate;
+}
+
+@keyframes textMove3 {
+    from{
+        transform: translate(1200px,130px);
+    }
+    to{
+        transform: translate(1200px,150px);
+    }
+  
+    
+}
+
+.bt-3{
+    animation: textMove3 1s  ease-in-out .8s infinite alternate;
+}
+
+.hero-text{
+   margin-left: 80px;
+    font-size: 40px;
+}
+
+
+@keyframes scrolling {
+    0%{
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    10%,25%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+   35%,90%{
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+}
+ .tspan {
+    position: absolute;
+    opacity: 0;
+    animation: scrolling 9s infinite;
+    color: blueviolet;
+    font-size: 60px;
+  }
+  
+ .one {
+    animation-delay: 0s;
+  }
+ .two {
+    animation-delay: 3s;
+  }
+ .three{
+    animation-delay: 6s;
+  }
+
+  /* ----------------------------- About-Section ------------------------------------ */
+
+.headings{
+    font-size: 44px;
+    text-align: center;
+    margin: 0px;
+    margin-bottom: 40px;
+    margin-top: 16px;
+    text-decoration: underline;
+    text-decoration-color: blueviolet;
+    /* margin-top: 80px; */
+
+  }
+
+  .aboutme-container{
+    width: 90%;
+    height: 370px;
+    border: 1px solid rgb(219, 214, 214);
+    margin: auto;
+    display: flex;
+    align-items: center;
+  }
+  .ab-1{
+    width:35%;
+    padding: 30px;
+    padding-left: 120px;
+  }
+  .ab-2{
+    width:65%;
+    font-size: 20px;
+    word-spacing: 1px;
+    line-height: 30px;
+
+  }
+
+  /* -----------------------------Education-Section ------------------------------------ */
+
+  .education-section{
+
+  }
+.edu-container{
+    width: 100%;
+    height: 300px;
+    box-sizing: border-box;
+    display: flex;
+    margin: auto;
+    padding-left: 80px;
+    padding-right: 80px;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgb(237, 231, 221) ;
+}
+.EdCard{
+    width: 300px;
+    height:220px;
+    border:1px solid rgb(219, 214, 214);
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 30px;
+    border: 1.5px solid blueviolet;
+    background-color: white;
+}
+.EdCard {
+    transition: all 0.4s ease-in-out;
+  }
+/*   
+  .EdCard:hover {
+    background-color: white;
+  } */
+.sub-head{
+    font-size:22px;
+    color:goldenrod;
+    font-weight: 800;
+}
+.sub-para{
+    font-size:18px;
+    color:black;
+    font-weight: 550;
+}
+
+  /* -----------------------------Projects-Section ------------------------------------ */
+.Fend-container{
+    width: 90%;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.Fcard{
+    width: 420px;
+    height: 600px;
+    border: 1px solid rgb(219, 214, 214);
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    padding: 10px;
+   
+}
+.Fcard{
+    transition:all 0.4s ease-in-out;
+}
+.Fcard:hover{
+    transform: scale(1.1);
+    border: 1px solid blueviolet;
+    box-shadow: 1px 1px 10px  goldenrod;
+}
+
+.Fimg{
+    margin-top: 80px;
+    box-shadow: 0px 5px 15px black;
+    transform: translate(41vw, 0) rotate(3deg);
+}
+@keyframes frame {
+    0%{
+        transform: translate(41vw, 0) rotate(0deg);
+    }
+    50%{
+        transform: translate(41vw, 0) rotate(4deg);
+    }
+    100%{
+        transform: translate(41vw, 0) rotate(0deg);
+    }
+}
+.Fimg{
+    animation: frame 2s ease-in-out infinite;
+}
+.f-description{
+    line-height: 26px;
+    list-style: square;
+}
+
+
+  /* -----------------------------Projects-Section ------------------------------------ */
+  .Bend-container{
+    width: 90%;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.Bcard{
+    width: 420px;
+    height: 650px;
+    border: 1px solid rgb(219, 214, 214);
+    margin-bottom: 30px;
+    transition:all 0.4s ease-in-out;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.Bcard:hover{
+    transform: scale(1.1);
+    border: 1px solid blueviolet;
+    box-shadow: 1px 1px 10px  goldenrod;
+}
+.BFour{
+    margin: auto;
+}
+
+.l{
+    box-shadow: 1px 1px 10px  blueviolet;;
+}
+
+.b-images{
+    width: 400px;
+    height: 230px;
+    object-fit: cover;
+}
+
+.c-heading{
+    text-align:center ;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 10px;
+    color: black;
+}
+
+.c-description{
+    line-height: 26px;
+    list-style: square;
+}
+
+
+  /* -----------------------------Skills and Certification -Section ------------------------------------ */
+  #skills-section{
+    position: relative;
+  }
+  .sc-contianer{
+    width: 100%;
+    height: 550px;
+    background-color:rgb(237, 231, 221);
+    display: flex;
+    padding-left: 100px;
+    padding-right: 100px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 40px;
+    margin-top: 70px;
+   
+  }
+
+  .skills{
+    background-color: black;
+    width: 50%;
+    height: 480px;
+    border: 0px 0px 0px 10px;
+    border-color: red;
+  }
+  .certificates{
+    background-color:black;
+    width: 50%;
+    height: 480px;
+    border: 0px 0px 0px 10px solid red;
+  }
+
+  .m-head{
+    margin-left: 14px;
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+  }
+  .skill{
+    height: 60px;
+    background-color: black;
+    width: 100%;
+    padding-left: 14px;
+    box-sizing: border-box;
+  }
+  .skill p{
+    margin-bottom: 8px;
+  }
+
+  .bar{
+    width: 80%;
+    background-color: white;
+    height: 15px;
+    margin-top: 0px;
+    border-radius: 8px;
+    /* display: flex; */
+  }
+
+  .b{
+    width: 0%;
+    background-color: blueviolet;
+    height: 15px;
+    border-radius: 8px;
+    
+  }
+
+  .group1,.group2,.group3,.group4,.group5{
+    display: flex;
+    align-items: center;
+    height: 30px;
+    width: 100%;
+    background-color: black;
+  }
+  .per1,.per2,.per3,.per4,.per5{
+    color: white;
+    margin-left: 14px;
+    margin-top: 10px;
+  }
+
+  .Cert-Container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+
+  .cert{
+    color: darkgrey;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 40px;
+    /* background-color: beige; */
+  }
+
+  .cert p{
+    margin-top: 24px;
+    margin-left: 14px;
+
+  }
+
+    /* -----------------------------Contact-Section ------------------------------------ */
+  
+    .apps{
+        width: 40%;
+        height: 100px;
+        border: 1px dashed;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding-left: 130px;
+        padding-right: 130px;
+        box-sizing: border-box;
+        margin-bottom: 40px;
+    }
+    .fa-brands {
+        font-size: 40px;
+        display: inline-block;
+      }
+    .fa-brands:hover{
+        animation: jump .7s linear 1;
+      }
+      
+    .fa-solid{
+        font-size: 40px;
+    }
+    .fa-solid:hover{
+        animation: jump .7s ease-in 1;
+    }
+
+    @keyframes jump {
+        0%   { transform: rotate(40deg); }
+        50%  { transform: rotate(-40deg); }
+        100% { transform: rotate(0deg); }
+      }
+
+    @keyframes carMov {
+
+      0%{
+        transform: translateX(-100);
+      }
+      100%{
+        transform: translateX(1400px);
+      }
+      
+    }
+
+    .car{
+      width: 150px;
+      height: 150px;
+      position: absolute;
+      transform: translateX(-150px);
+      top:22px;
+    }
+
+    .car{
+      animation: carMov 12s linear infinite 1s;
+    }
