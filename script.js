@@ -85,7 +85,7 @@ const observer = new IntersectionObserver((entries) => {
         div.style.right="50px";
         div.style.top="500px";
         div.style.borderRadius="50%"
-        div.style.backgroundColor="transparent"
+        div.style.backgroundColor="white"
         div.style.border="1px solid"
         div.style.borderColor="orangered"
         div.innerHTML = `<img src="./images/arrow_up.svg">`;
