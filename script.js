@@ -82,8 +82,8 @@ const observer = new IntersectionObserver((entries) => {
         div.style.height="50px";
         div.style.backgroundColor="black";
         div.style.position="fixed";
-        div.style.right="50px";
-        div.style.top="500px";
+        div.style.left="90vw";
+        div.style.top="80vh";
         div.style.borderRadius="50%"
         div.style.backgroundColor="white"
         div.style.border="1px solid"
