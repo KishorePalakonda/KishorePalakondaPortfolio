@@ -532,37 +532,42 @@ a:hover{
         100% { transform: rotate(0deg); }
       }
 
-    @keyframes carMov {
-
-      0%{
-        transform: translateX(-100);
-      }
-      35%{
-        top:22px;
-        transform: translateX(1440px);
-      }
-      35%,55%{
-        visibility: hidden;
-        transform: translateX(1340px);
-      }
-      55%{
-        top:619px;
-        overflow: hidden;
-        transform: translateX(1340px) rotate(180deg);
-      }
-      80%{
-        top:619px;
-        transform: translateX(-130px) rotate(180deg);
-      }
-
-      100%{
-        transform: translateX(-200px);
-        /* display: none; */
-      }
-
       
-    }
-
+      @keyframes carMov {
+      
+        0% {
+          transform: translateX(-100px);
+          top: 22px;
+        }
+      
+        35% {
+          transform: translateX(100vw);
+          top: 22px;
+        }
+      
+        /* Hide car while teleporting */
+        36%, 54% {
+          visibility: hidden;
+          transform: translateX(100vw);
+        }
+      
+        /* Appear at bottom and rotate */
+        55% {
+          visibility: visible;
+          top: 619px;
+          transform: translateX(100vw) rotate(180deg);
+        }
+      
+        80% {
+          top: 619px;
+          transform: translateX(-130px) rotate(180deg);
+        }
+      
+        100% {
+          transform: translateX(-200px) rotate(180deg);
+        }
+      }
+      
     .car{
       width: 150px;
       height: 150px;
