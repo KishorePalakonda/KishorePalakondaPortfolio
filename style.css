@@ -407,6 +407,8 @@ a:hover{
     gap: 20px;
     margin-bottom: 40px;
     margin-top: 70px;
+    border: 1px solid;
+    overflow: hidden;
    
   }
 
@@ -535,9 +537,29 @@ a:hover{
       0%{
         transform: translateX(-100);
       }
-      100%{
+      35%{
+        top:22px;
         transform: translateX(1440px);
       }
+      35%,55%{
+        visibility: hidden;
+        transform: translateX(1340px);
+      }
+      55%{
+        top:619px;
+        overflow: hidden;
+        transform: translateX(1340px) rotate(180deg);
+      }
+      80%{
+        top:619px;
+        transform: translateX(-130px) rotate(180deg);
+      }
+
+      100%{
+        transform: translateX(-200px);
+        /* display: none; */
+      }
+
       
     }
 
@@ -550,5 +572,5 @@ a:hover{
     }
 
     .car{
-      animation: carMov 12s linear infinite 1s;
+      animation: carMov 30s linear infinite;
     }
