@@ -2,6 +2,7 @@ html,body{
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 body{
     background-color:white;
@@ -55,7 +56,6 @@ a:hover{
 /* ----------------------------- Hero-Section ------------------------------------ */
 #hero-section{
   width: 100%;
- 
 }
 .hero{
     margin-top: 0px;
@@ -70,6 +70,13 @@ a:hover{
     line-height: 60px;
     position: relative;
 }
+
+@media (max-width:700px) {
+  .hero{
+    min-height: 30vh;
+  }
+}
+
 .bt-1{
     height: 60px;
     width: 60px;
@@ -541,21 +548,20 @@ a:hover{
         }
       
         35% {
-          transform: translateX(100vw);
+          transform: translateX(98vw) ;
           top: 22px;
+          visibility: hidden;
         }
       
-        /* Hide car while teleporting */
         36%, 54% {
           visibility: hidden;
-          transform: translateX(100vw);
+          transform: translateX(98vw) rotate(180deg) ;
         }
       
-        /* Appear at bottom and rotate */
         55% {
           visibility: visible;
           top: 619px;
-          transform: translateX(100vw) rotate(180deg);
+          transform: translateX(98vw) rotate(180deg);
         }
       
         80% {
