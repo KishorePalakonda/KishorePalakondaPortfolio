@@ -555,13 +555,13 @@ a:hover{
       
         36%, 54% {
           visibility: hidden;
-          transform: translateX(98vw) rotate(180deg) ;
+          transform: translateX(100vw) rotate(180deg) ;
         }
       
         55% {
           visibility: visible;
           top: 619px;
-          transform: translateX(98vw) rotate(180deg);
+          transform: translateX(100vw) rotate(180deg);
         }
       
         80% {
