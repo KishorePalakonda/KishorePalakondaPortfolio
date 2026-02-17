@@ -306,6 +306,7 @@ a:hover{
     margin-bottom: 0px;
     box-sizing: border-box;
     padding: 10px;
+    border-radius: 10px;
    
 }
 .Fcard{
@@ -363,6 +364,7 @@ a:hover{
     transition:all 0.4s ease-in-out;
     box-sizing: border-box;
     padding: 10px;
+    border-radius: 10px;
 }
 .Bcard:hover{
     transform: scale(1.1);
